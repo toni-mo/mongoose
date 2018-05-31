@@ -1,0 +1,105 @@
+extends ./layout
+
+block agencies
+  main
+    .container-fluid
+      .row
+        .col-8
+          #map.map-container
+          .agency-details
+            h2 Manitoba Start
+            address
+              | 1643 Henderson hwy.
+              br
+              |                             Winnipeg, Manitoba
+              br
+              a(href='manitobastart.ca') www.manitobastart.ca
+            ul.list-inline
+              strong Services:
+              li.list-inline-item English language,
+              li.list-inline-item Job Search,
+              li.list-inline-item Computer Classes,
+              li.list-inline-item Resume &amp; Cover Letter help
+            p
+              | It is a long established fact that a reader will be distracted by the readable content of a page when
+              | looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+              | as opposed to using &apos;Content here, content here&apos;, making it look like readable English.
+              | Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,
+              | and a search for &apos;lorem ipsum&apos; will uncover many web sites still in their infancy.
+        .col-4.side-column.border
+          // Container with tabs
+          .tabs
+            // Agencies List Tab
+            .agencies-list-tab
+              .search-container
+                form(action='')
+                  //
+                    <div class="row">
+                    <div class="col">
+                    <div class="input-group mb-3">
+                    <input type="text" class="form-control form-control-lg" placeholder="Search Agencies">
+                    <div class="input-group-append">
+                    <button class="btn btn-outline-secondary">
+                    <i class="fas fa-search"></i>
+                    </button>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                  .row
+                    .offset-1.col-10.pt-3
+                      .input-group.mb-3
+                        input#address.form-control(type='text' placeholder='Enter Your Street Address, City, State OR Your ZIP Code.')
+                        .input-group-append
+                          button#search-address.btn.btn-outline-secondary
+                            i.fas.fa-street-view
+                  .form-group
+                    label(for='distanceRange') Distance:
+                    input#distanceRange.form-control-range(type='range' min='0' max='50' step='1' value='0' oninput='selectDistance()')
+                    #distanceValue 0km(need to think on this)
+                  .filter-block.border.mb-3
+                    .form-check.mb-3
+                      input#prCheckBox.form-check-input(type='checkbox' value='pr')
+                      label.form-check-label.mr-3(for='prCheckBox') PR
+                    .form-check.mb-3
+                      input#prCheckBox.form-check-input(type='checkbox' value='pr')
+                      label.form-check-label.mr-3(for='prCheckBox') Work Permit
+                    .form-check.mb-3
+                      input#prCheckBox.form-check-input(type='checkbox' value='pr')
+                      label.form-check-label.mr-3(for='prCheckBox') Other
+                    .form-check.mb-3
+                      input#prCheckBox.form-check-input(type='checkbox' value='pr')
+                      label.form-check-label.mr-3(for='prCheckBox') English Language
+                    .form-check.mb-3
+                      input#prCheckBox.form-check-input(type='checkbox' value='pr')
+                      label.form-check-label.mr-3(for='prCheckBox') Computer Classes
+                    .form-check.mb-3
+                      input#prCheckBox.form-check-input(type='checkbox' value='pr')
+                      label.form-check-label.mr-3(for='prCheckBox') Job Search
+                    .form-check.mb-3
+                      input#prCheckBox.form-check-input(type='checkbox' value='pr')
+                      label.form-check-label.mr-3(for='prCheckBox') Income Assistance
+                    .form-check.mb-3
+                      input#prCheckBox.form-check-input(type='checkbox' value='pr')
+                      label.form-check-label.mr-3(for='prCheckBox') Resume &amp; Cover Letter
+                    .form-check.mb-3
+                      input#prCheckBox.form-check-input(type='checkbox' value='pr')
+                      label.form-check-label.mr-3(for='prCheckBox') Settlement Help
+                    .form-check.mb-3
+                      input#prCheckBox.form-check-input(type='checkbox' value='pr')
+                      label.form-check-label.mr-3(for='prCheckBox') Interview Preparation
+              .agencies-list.border
+              each agency in agencies
+                .agency-item
+                  h4.agency-title= agency.name
+                  address
+                    | #{agency.address}
+                    br
+                    |                                         Winnipeg, Manitoba
+                    br
+                    a(href=agency.website) #{agency.website}
+                
+            // Finding Route Tab (still to think through)
+            .route-tab
+  script(src='js/script.js')
+  script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBsYSmDpDcfvtUrm3aLRz28Ku_NQU542Ig&callback=initMap' async='' defer='')
