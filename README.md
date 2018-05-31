@@ -3,10 +3,10 @@ Hello guys! Here we will try to get data from database with the help of mongoose
 
 ### The whole principle is like this:
 * [Install mongoose, connect with it to database.](https://github.com/toni-mo/mongoose/blob/master/README.md#the-whole-principle-is-like-this)
-* Create model and export it.
-* Use model inside route handler.
-* Render PUG template with data from model.
-* Use variable inside PUG template.
+* [Create model and export it.](https://github.com/toni-mo/mongoose/blob/master/README.md#creating-model)
+* [Use model inside route handler.](https://github.com/toni-mo/mongoose/blob/master/README.md#getting-data-from-collection)
+* [Render PUG template with data from model.]
+* [Use variable inside PUG template.]
 
 ## Installing mongoose and connecting to your database
 in your project folder
@@ -91,7 +91,7 @@ module.exports = router;
 
 In your case instead of **router.get()** it will be like **app.get()**:
 
-**index.js**
+### index.js
 ```javascript
 
 const Agency = require('./models/agency');
