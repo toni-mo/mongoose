@@ -2,11 +2,11 @@
 Hello guys! Here we will try to get data from database with the help of mongoose module.
 
 ### The whole principle is like this:
-    1. Install mongoose, connect with it to database.
-    2. Create model and export it.
-    3. Use model inside route handler.
-    5. Render PUG template with data from model.
-    4. Use variable inside PUG template.
+* Install mongoose, connect with it to database.
+* Create model and export it.
+* Use model inside route handler.
+* Render PUG template with data from model.
+* Use variable inside PUG template.
 
 ## Installing mongoose and connecting to your database
 in your project folder
