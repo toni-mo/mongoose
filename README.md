@@ -5,6 +5,10 @@ You can also watch video how this guy doest it. Better to start from **5.59 minu
 
 [Getting data with Mongoose video](https://www.youtube.com/watch?v=WDrU305J1yw)
 
+In this repo I only describe how use `.find()` method of mongoose model. If you want look other methods like `.findOne()`, `.update()`, `.delete()`, please use mongoose documentation.
+
+[Mongoose documentation](http://mongoosejs.com/docs/guide.html)
+
 ### The whole principle is like this:
 * [Install mongoose, connect with it to database.](https://github.com/toni-mo/mongoose/blob/master/README.md#the-whole-principle-is-like-this)
 * [Create model and export it.](https://github.com/toni-mo/mongoose/blob/master/README.md#creating-model)
@@ -55,6 +59,7 @@ const agencySchema = mongoose.Schema({
 
 module.exports = mongoose.model('Agency', agencySchema);
 ```
+Here `.Schema()` method takes object as parameter. The **properties** in this object will be the same as **your collection** in database has.
 In the following line, inside `.model()` method, **'Agency'** argument represents collection in your database. Mongoose takes this argument and create reference to the collection with **same name, but in plural form** in your database.
 
 So if you have **products** collection, here you would specify **'Product'**. If you have **cars** collection, you would specify **'Car'**. Be careful with that. If you specify wrong name, reference to your collection will not work.
