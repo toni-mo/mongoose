@@ -1,12 +1,16 @@
 # Mongoose example
 Hello guys! Here we will try to get data from database with the help of mongoose module.
 
+You can also watch video how this guy doest it. Better to start from **5.59 minute** of video.
+
+[Getting data with Mongoose](https://www.youtube.com/watch?v=WDrU305J1yw)
+
 ### The whole principle is like this:
 * [Install mongoose, connect with it to database.](https://github.com/toni-mo/mongoose/blob/master/README.md#the-whole-principle-is-like-this)
 * [Create model and export it.](https://github.com/toni-mo/mongoose/blob/master/README.md#creating-model)
 * [Use model inside route handler.](https://github.com/toni-mo/mongoose/blob/master/README.md#getting-data-from-collection)
 * [Render PUG template with data from model.](https://github.com/toni-mo/mongoose/blob/master/README.md#indexjs)
-* [Use variable inside PUG template.](https://github.com/toni-mo/mongoose/blob/master/README.md#accessing-data-in-pug-template)
+* [Use variable inside PUG template and dynamicaly create html with it's properties.](https://github.com/toni-mo/mongoose/blob/master/README.md#accessing-data-in-pug-template)
 
 ## Installing mongoose and connecting to your database
 in your project folder
@@ -159,4 +163,6 @@ which will transform in the following:
     </address>
 ```
 You can create some simmilar **pug** code to render dynamicaly your data, like `products` or anything.
+
+## If you have any questions, feel free to contact me! ;) ;) ;)
 
