@@ -3,7 +3,7 @@ Hello guys! Here we will try to get data from database with the help of mongoose
 
 You can also watch video how this guy doest it. Better to start from **5.59 minute** of video.
 
-[Getting data with Mongoose](https://www.youtube.com/watch?v=WDrU305J1yw)
+[Getting data with Mongoose video](https://www.youtube.com/watch?v=WDrU305J1yw)
 
 ### The whole principle is like this:
 * [Install mongoose, connect with it to database.](https://github.com/toni-mo/mongoose/blob/master/README.md#the-whole-principle-is-like-this)
@@ -17,7 +17,7 @@ in your project folder
 
 `npm install mongoose`
 
-then, inside your index.js
+then, inside your **index.js**
 
 `const mongoose = require('mongoose');`
 
@@ -163,6 +163,8 @@ which will transform in the following:
     </address>
 ```
 You can create some simmilar **pug** code to render dynamicaly your data, like `products` or anything.
+
+### All these code examples are from the files on this repo. So check the files too.
 
 ## If you have any questions, feel free to contact me! ;) ;) ;)
 
