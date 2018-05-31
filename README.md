@@ -5,8 +5,8 @@ Hello guys! Here we will try to get data from database with the help of mongoose
 * [Install mongoose, connect with it to database.](https://github.com/toni-mo/mongoose/blob/master/README.md#the-whole-principle-is-like-this)
 * [Create model and export it.](https://github.com/toni-mo/mongoose/blob/master/README.md#creating-model)
 * [Use model inside route handler.](https://github.com/toni-mo/mongoose/blob/master/README.md#getting-data-from-collection)
-* [Render PUG template with data from model.]
-* [Use variable inside PUG template.]
+* [Render PUG template with data from model.](https://github.com/toni-mo/mongoose/blob/master/README.md#indexjs)
+* [Use variable inside PUG template.](https://github.com/toni-mo/mongoose/blob/master/README.md#accessing-data-in-pug-template)
 
 ## Installing mongoose and connecting to your database
 in your project folder
