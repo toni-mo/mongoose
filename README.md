@@ -119,6 +119,8 @@ Agency.find().exec().then(function(docs){
 ```
 **Take a good look** that if we want to render `.pug` template with our data, we have to do it inside `.then()` method.
 
+Also, as I understood, this chain of methods is mandatory `.find().exec().then()`.
+
 Here `docs` parameter contains our data from database, and `res.render('agencies', {agencies: docs});` renders `agencies.pug` template and gives it variable, that receives value from docs.
 
 ## Accessing data in PUG template
@@ -138,7 +140,7 @@ Now when I've rendered `agencies.pug` template with agencies variable in it, I c
 ```
 Here **each agency in agencies** loops through agencies and for each of them creates following html elements.
 
-To render agency propety I'm using forlowing ways of assigning:
+To render agency property I'm using forlowing ways of assigning:
 ```
 .agency-item
     h4.agency-title= agency.name
