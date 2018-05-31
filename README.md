@@ -1,5 +1,5 @@
 # Mongoose example
-Hello guys! Here we will try to get data from database with the help of mongoose module.
+Hello guys! Here we will try to get data from database with the help of mongoose module. I will be using **agencies application** as an example.
 
 You can also watch video how this guy doest it. Better to start from **5.59 minute** of video.
 
