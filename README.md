@@ -55,7 +55,7 @@ const agencySchema = mongoose.Schema({
 
 module.exports = mongoose.model('Agency', agencySchema);
 ```
-In the following line, inside .model() method, 'Agency' argument represents collection in your database. Mongoose takes this argument and create reference to the collection with **same name but in plural form** in your database.
+In the following line, inside `.model()` method, **'Agency'** argument represents collection in your database. Mongoose takes this argument and create reference to the collection with **same name, but in plural form** in your database.
 
 So if you have **products** collection, here you would specify **'Product'**. If you have **cars** collection, you would specify **'Car'**. Be careful with that. If you specify wrong name, reference to your collection will not work.
 In my case I have **`agencies`** collection in my database. So I specify **'Agency'**.
