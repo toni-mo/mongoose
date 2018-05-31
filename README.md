@@ -1,15 +1,14 @@
 # Mongoose example
 Hello guys! Here we will try to get data from database with the help of mongoose module.
 
-The whole principle is like this:
-
+### The whole principle is like this:
     1. Install mongoose, connect with it to database.
     2. Create model and export it.
     3. Use model inside route handler.
     5. Render PUG template with data from model.
     4. Use variable inside PUG template.
 
-### Installing mongoose and connecting to your database
+## Installing mongoose and connecting to your database
 in your project folder
 
 `npm install mongoose`
@@ -27,7 +26,7 @@ const dbUrl = 'mongodb://localhost:27017/iagencies';
 mongoose.connect(dbUrl);
 ```
 
-### Creating Model 
+## Creating Model 
 In the project folder lets create folder **model** and inside it, create file `agency.js`. This model will be representing collection in your database.
 
 `agency.js` is just in my case. If you have products in your application, then it will be `product.js`.
