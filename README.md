@@ -1,4 +1,4 @@
-# mongoose example
+# Mongoose example
 Hello guys! Here we will try to get data from database with the help of mongoose module.
 
 The whole principle is like this:
@@ -115,7 +115,7 @@ Agency.find().exec().then(function(docs){
 ```
 **Take a good look** that if we want to render `.pug` template with our data, we have to do it inside `.then()` method.
 
-Here `doc` parameter contains our data from database, and `res.render('agencies', {agencies: docs});` renders `agencies.pug` template and gives it variable, that receives value from docs.
+Here `docs` parameter contains our data from database, and `res.render('agencies', {agencies: docs});` renders `agencies.pug` template and gives it variable, that receives value from docs.
 
 ## Accessing data in PUG template
 Now when I've rendered `agencies.pug` template with agencies variable in it, I can loop through it and dynamicaly display it's agency properties inside pug.
@@ -135,6 +135,7 @@ Now when I've rendered `agencies.pug` template with agencies variable in it, I c
 Here **each agency in agencies** loops through agencies and for each of them creates following html elements.
 
 To render agency propety I'm using forlowing ways of assigning:
+```
 .agency-item
     h4.agency-title= agency.name
     address
@@ -143,6 +144,7 @@ To render agency propety I'm using forlowing ways of assigning:
     | Winnipeg, Manitoba
     br
     a(href=agency.website) #{agency.website}
+```    
 
 which will transform in the following:
 ```html
