@@ -2,6 +2,7 @@
 Hello guys! Here we will try to get data from database with the help of mongoose module.
 
 The whole principle is like this:
+
     1. Install mongoose, connect with it to database.
     2. Create model and export it.
     3. Use model inside route handler.
