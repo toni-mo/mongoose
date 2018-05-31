@@ -7,7 +7,7 @@ const Agency = require('./models/agency');
 
 router.get('/', function(req, res){
     
-    // Needs to be looked through
+    // Getting data from agency collection     
     Agency.find().exec().then(function(docs){
         console.log(docs);
         res.render('agencies', {agencies: docs});    
